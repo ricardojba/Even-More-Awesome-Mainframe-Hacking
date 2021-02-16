@@ -17,6 +17,7 @@ Table of Contents
  	* [Books](#-Books)
  	* [Tutorials](#-Tutorials)
 	* [Concepts and Terms](#-Concepts-and-Terms)
+	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-z/OS-Security)
  	* [Scripts & Tools](#-Scripts-and-Tools)
  	* [Presentations & Talks](#-Presentations-and-Talks)
  	* [ACF2 Specific references](#-ACF2-Specific-references)
@@ -29,7 +30,7 @@ Table of Contents
  	* [iSeries Presentations & Talks](#-iSeries-Presentations-and-Talks)
  	* [Miscellaneous](#-miscellaneous)
 
- 
+
  
 # [↑](#table-of-contents) IBM zSeries
 
@@ -48,6 +49,7 @@ Table of Contents
 * [Using UNIX System Services to escalate your privileges on z/OS](https://www.bigendiansmalls.com/all-aboard-the-uss-exploits/)
 * [The crash course to z/OS pentesting](https://github.com/hacksomeheavymetal/zOS/blob/master/pentesting.md) by [@hacksomeheavymetal](https://github.com/hacksomeheavymetal)
 
+
 ## [↑](#table-of-contents) Concepts and Terms
 * REXX files - the equivalent of Python (scripting language)
 * JCL files - the equivalent of bash scripts
@@ -62,13 +64,14 @@ Table of Contents
 * SNA - Often the first thing you connect to on a mainframe
 * LU / PU - Logical/Physical Unit – Connections to VTAM (wired vs multiplexed) – TN3270 to mainframe usually gives you a LU
 * ISPF - Menu screens (GUI) (most people use the ISPF)
-* DATASETS - "files"
-* PDS or PARTIONED DATASETS - "folders"
+* DATASETS - "file" z/OS concept
+* PDS or PARTITIONED DATASETS - "folders" z/OS concept
 * OMVS / USS - Unix subsystem for network, FTP, webservices support
 * APF - programs that are setuid 0
 * TPX - similar to the gnu-screen
 
-## [↑](#table-of-contents) Top Ten Security Vulnerabilities inz/OS Security
+
+## [↑](#table-of-contents) Top Ten Security Vulnerabilities in z/OS Security
 [Reference](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
 * Excessive Number of User ID’s w/No Password Interval
 * Inappropriate Usage of z/OS UNIX Superuser Privilege, UID = 0
@@ -112,13 +115,12 @@ Table of Contents
 * [zOS Privilege Escalation scripts by ayoul3__](https://github.com/ayoul3/Privesc)
 * [Note on TESTAUTH command for running a program in elevated state](https://github.com/zBit31/testauth)
 * [zOSFTPlib - python ftplib-like library specifically for Z/OS](https://pypi.org/project/zosftplib/)
-  
- 
-## [↑](#table-of-contents) Presentations and Talks
 
-* # [Video - All the videos of Security Talks by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmEL56fb5AnZCM8pXXFfJS0n)
-* # [Video - All the videos of Tools by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmF_CB9VYbcAhiyg1i1IYaWP)
-* # [Video - All the videos of Mainframe Hacking by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmGdX1OE_xjK0GKGjSLwxVn_)
+
+## [↑](#table-of-contents) Presentations and Talks
+* [Video - All the videos of Security Talks by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmEL56fb5AnZCM8pXXFfJS0n)
+* [Video - All the videos of Tools by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmF_CB9VYbcAhiyg1i1IYaWP)
+* [Video - All the videos of Mainframe Hacking by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmGdX1OE_xjK0GKGjSLwxVn_)
 
 * [How to Break into z/OS Systems - Staurt Henderson](http://www.stuhenderson.com/XBRKZTXT.PDF)
 * [How to Break Into z/OS Systems Through USS, TCP/IP, and the Internet](http://www.stuhenderson.com/STUuss01.pdf)
@@ -150,9 +152,11 @@ Table of Contents
 * [CA ACF2 for z/OS - 16.0 Documentation](https://docops.ca.com/ca-acf2-for-z-os/16-0/en)
 * [GIAC - ACF2 Mainframe Security](https://www.giac.org/paper/gsec/2812/acf2-mainframe-security/104768)
 
+
 ## [↑](#table-of-contents) STIGs
 * [z/OS TSS STIG](https://www.stigviewer.com/stig/zos_tss/)
 * [z/OS RACF STIG](https://www.stigviewer.com/stig/zos_racf/)
+
 
 ## [↑](#table-of-contents) Misc
 * [Mainframe Hacking - Choose Your own Adventure Game](https://archive.org/details/MainframeHackingCYOA)
@@ -161,6 +165,7 @@ Table of Contents
 * [z/OS Internet Library by IBM - Collection of manuals,guides & books about z/OS ](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosInternetLibrary)
 * [DoD Security Technical implementation Guides(STIGS) - Search for ACF2, Z/OS, RACF etc.](https://public.cyber.mil/stigs/downloads/)
 * [Default Accounts](https://github.com/hacksomeheavymetal/zOS/blob/master/default_accounts.txt)
+
 
 
 # [↑](#table-of-contents) IBM iSeries
@@ -172,7 +177,6 @@ Table of Contents
 * PDF - [The IBM AS400 A technical introduction](https://www.ibm.com/developerworks/community/files/basic/anonymous/api/library/7cd1e29f-0699-4929-a741-516ce47295a8/document/745425bf-c00a-4a8d-bd8f-1f8e14ef9e65/media)
 
 
-
 ## [↑](#table-of-contents) Tutorials and Checklists
 * [AS/400 Security Assessment Mindmap](http://www.toolswatch.org/wp-content/uploads/2013/02/AS400.jpg)
 * [iSeries Penetration Testing](https://www.helpsystems.com/resources/articles/iseries-penetration-testing)
@@ -181,6 +185,7 @@ Table of Contents
 * [Security Assessment of the IBM i (AS 400) System : Part 1](https://iisecurity.in/blog/security-assessment-ibm-400-system-part-1/)
 * [Seclists Mailing list thread on Pentesting AS/400](https://seclists.org/pen-test/2000/Dec/205)
 * [Resources from Shalom Carmel's talk at BH Europe - 2006](http://www.blackhat.com/presentations/bh-europe-06/bh-eu-06-Carmel/bh-eu-06-carmel-resources.zip)
+
 
 ## [↑](#table-of-contents) Tools
 * [hack400tool - security handling tools for IBM Power Systems (formerly known as AS/400)](https://github.com/hackthelegacy/hack400tool)
@@ -193,6 +198,8 @@ Table of Contents
 * [AS/400 for pentesters by Shalom Carmel](https://www.blackhat.com/presentations/bh-europe-06/bh-eu-06-Carmel/bh-eu-06-Carmel.pdf)
 * [AS/400: Lifting the Veil of Obscurity](https://www.youtube.com/watch?v=MWcifBsA8BI)
 
+
 ## [↑](#table-of-contents) Miscellaneous
 * [AS400i.com](http://as400i.com/)
 * [Hack The Legacy Website](http://hackthelegacy.org/)
+

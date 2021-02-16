@@ -165,8 +165,11 @@ Logging in:
 - On the login screen enter credentials, e.g.:
 
   `login: ibmuser`
+  
   `pass: sys1`
+  
   `proc: ISPFPROC|OMVSPROC|IKJACCNT`
+  
   
 - On the welcome screen enter userid and see 2.1., e.g.:
 

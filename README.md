@@ -6,7 +6,7 @@ All creds to [@samanL33T](https://twitter.com/samanL33T) for starting the list [
 List of Mainframe Hacking/Pentesting Resources.
 This list is a collection of resources available online to learn Mainframe Penetration Testing & Security.
 
-Special thanks to [@samanL33T](https://twitter.com/samanL33T), [@mainframed767](https://twitter.com/mainframed767), [@bigendiansmalls](https://twitter.com/bigendiansmalls), [@ayoul3__](https://twitter.com/ayoul3__) and many other researchers for all their work in this field. 
+Special thanks to [@samanL33T](https://twitter.com/samanL33T), [@hacksomeheavymetal](https://github.com/hacksomeheavymetal), [@mainframed767](https://twitter.com/mainframed767), [@bigendiansmalls](https://twitter.com/bigendiansmalls), [@ayoul3__](https://twitter.com/ayoul3__) and many other researchers for all their work in this field. 
 
 [Contributions](contributing.md) are welcome !
 
@@ -16,7 +16,7 @@ Table of Contents
 * [IBM zSeries](#-IBM-zSeries)
  	* [Books](#-Books)
  	* [Tutorials](#-Tutorials)
-	* [Concepts and Terms](#-Concepts-and-Terms)
+	* [Concepts and Terms](#-Acronyms-and-Concepts)
 	* [Typical TCP Ports](#-Typical-TCP-Ports)
 	* [Emulate zOS](#-Emulate-zOS)
 	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-zOS-Security)
@@ -24,7 +24,7 @@ Table of Contents
  	* [Presentations & Talks](#-Presentations-and-Talks)
  	* [ACF2 Specific references](#-ACF2-Specific-references)
 	* [Security Technical Implementation Guides (STIGs)](#-STIGs)
- 	* [Misc](#-misc)
+ 	* [Misc](#-Misc)
 * [IBM iSeries](#-IBM-iSeries)
  	* [iSeries Books](#-iSeries-Books)
  	* [Tutorials & Checklists](#-Tutorials-and-Checklists)
@@ -43,7 +43,6 @@ Table of Contents
 
 
 ## [↑](#table-of-contents) Tutorials
-* [Emulating a MVS/zOS with Hercules](https://famicoman.com/2018/06/28/emulating-a-z-os-mainframe-with-hercules/)
 * [bigiron - Wiki/Collection of materials related to IBM z/OS security](https://github.com/v-p-b/bigiron)
 * [TSO Tutorial](http://www.jaymoseley.com/hercules/tso_tutor/tsotutor.htm)
 * [Z/OS Introduction- An IBM Redbooks video course](https://www.redbooks.ibm.com/redbooks.nsf/redbookabstracts/crse0304.html?Open)
@@ -52,13 +51,19 @@ Table of Contents
 * [The crash course to z/OS pentesting](https://github.com/hacksomeheavymetal/zOS/blob/master/pentesting.md) by [@hacksomeheavymetal](https://github.com/hacksomeheavymetal)
 
 
-## [↑](#table-of-contents) Concepts and Terms
+## [↑](#table-of-contents) Acronyms and Concepts
 [Reference(s)](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
 [Reference(s)](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
+
+**[The complete list of z/OS acronyms](https://github.com/hacksomeheavymetal/zOS/blob/master/vocabulary.md)**
+
 * **Username limited to 7 char length**
 * **Legacy password policy but YMMV**
   * 8 char length restrictions
   * No special chars
+* **Master Console**
+  * [A "system" level console](https://youtu.be/kjEEFSr-ncE?t=1356)
+  * If you get access then its game over
 * **Subsystems**
   * ACF-2
   * RACF
@@ -67,10 +72,14 @@ Table of Contents
       * **Special** : can alter RACF rules and access any resource
       * **Operations** : access all files unless being forbidden from doing so
       * **Auditor** : access audit trails and manage logging classes
-* **REXX files** - The equivalent of scripting language like Python
+* **REXX files**
+  * The equivalent of scripting language like Python/Ruby
+  * REXX Sockets have ASCII translation built in
 * **JCL files**
-  * The equivalent of bash scripts
-  * You can submit Jobs in JCL over FTP
+  * The equivalent of shell scripts (sort of)
+  * You can submit JOBs in JCL over FTP
+  * Has a "JOB card" or header and a "PMG" or program to exec
+* **Everything on a Mainframe is a JOB managed by JES (Job Entry Sub-system)**
 * **CLIST** - The equivalent of scripting language like Python
 * **TSO** - z/OS cli (Linux bash equivalent)
   * Login has a user enumeration flaw via on-screen error messages
@@ -78,7 +87,7 @@ Table of Contents
   * CLIST/REXX/JCL scripting
   * OMVS / USS – Unix
   * ISPF - Menu Screens (GUI)
-* **LPAR or Logical partition** - allocation of cpu, disk and mem resources (z/OS VMs equivalent) - Each LPAR can run different stuff e.g. IBM z/OS (mainframe) or with z/VM Linux (RedHat)
+* **LPAR or Logical partition** - Allocation of cpu, disk and mem resources (z/OS VMs equivalent) - Each LPAR can run different stuff e.g. IBM z/OS (mainframe) or with z/VM Linux (RedHat)
 * **SYSPLEX** - Multiple LPARS (across hardware too)
 * **CICS / IMS**
   * Transaction Managers
@@ -101,13 +110,16 @@ Table of Contents
   * Lets you connect to different application – Can connect you to other LPARs & sysplex’s
   * Uses APPLIDs or "macros"
 * **LU / PU** - Logical/Physical Unit – Connections to VTAM (wired vs multiplexed) – TN3270 to mainframe usually gives you a LU
-* **ISPF** 
-  * Menu screens (GUI)
-  * What everyone uses to interact with TSO
-  * Includes file browser & editor
 * **DATASETS** - The "file" z/OS concept
 * **PDS or PARTITIONED DATASETS** - The "folder" z/OS concept
-* **OMVS / USS** - Unix subsystem for network, FTP, webservices support
+* **OMVS**
+  * TSO command that gives you a /bin/sh shell 
+  * Its a Unix subsystem for network, FTP, webservices support
+  * You can "su" to root (and run other Unix commands) without a password, if the account is in 'BPX.SUPERUSER'
+* **ISPF** 
+  * TSO command that gives you the Menu screens (GUI)
+  * What everyone uses to interact with TSO
+  * Includes file browser & editor
 * **APF** - Programs that are setuid 0
 * **TPX** - Similar to the gnu-screen
 * **App Creds**
@@ -127,7 +139,7 @@ Table of Contents
   * 992 - default, SSL enabled
   * 1023-x0xx - application environments (direct to CICS/IMS regions)
   * 2323, x023, x992 - other ports to check
-* **FTP (TCP/21)**
+* **FTP**
   * Provides access to both worlds (TSO & OMVS)
   * Respects wildcards (*.RACF*.*)
   * Awesome brute forcing point
@@ -140,8 +152,36 @@ Table of Contents
 
 ## [↑](#table-of-contents) Emulate zOS
 * [Hercules Opensource zARCH Emulator](http://www.hercules-390.org) (Free)
-  * https://pastebin.com/PHiT8jmE
-* RDZ&T IBM zSystem Personal Development Tool (Paid and expensive) 
+* [Emulating a MVS/zOS with Hercules](https://famicoman.com/2018/06/28/emulating-a-z-os-mainframe-with-hercules/)
+* [YARGHHH! Avast! :) ](https://pastebin.com/PHiT8jm)
+* [z/OS booting, logging and working environments](https://github.com/hacksomeheavymetal/zOS/blob/master/firststeps.md)
+
+## Logging in:
+- On the login screen enter credentials, e.g.:
+  `login: ibmuser`
+  `pass: sys1`
+  `proc: ISPFPROC|OMVSPROC|IKJACCNT`
+  
+- On the welcome screen enter userid and see 2.1., e.g.:
+  `logon ibmuser`
+
+## Working environments:
+Depending on the chosen procedure you will end up in on of the working environments.
+- ISPF:
+  Courses-like environment with various panels. Allows to perform various tasks on its own, execute commands in TSO, run installed utilities in the z/OS etc.
+- OMVS:
+  Also known as Unix System Services is a POSIX compliant unix that runs within the z/OS itself. Similar to other unices. Execute "omvs" in TSO  (may not work if you don't have a pseudo terminal allocated, e.g. via SSH. In such case remove and create symlink in / to dev).
+- TSO:
+  Time Sharing Option is like a login session on linux. Very basic. You can run various commands and applications including "omvs" and "ispf". By typing "ishell" you can run ISPF shell that allows you to run commands in the OMVS.
+
+# Basic navigation:
+In the ISPF-like programs:
+  - PF10/PF11 shifts screen view right/left to see all displayed info
+  - PF7/PF8 scrolls screen view up/down to see all displayed info
+  - PA1 attention key on the virtual keyboard that terminates the execution of the current command in TSO (e.g. when in the '***' prompt).
+  - use "File -> Save screen contents" in x3270 (or similar) to save output from the terminal to a local file
+  - you can abbreviate some of the commands, e.g. setropts -> setr, listcat -> listc etc.
+
 
 
 ## [↑](#table-of-contents) Top Ten Security Vulnerabilities in zOS Security
@@ -194,7 +234,6 @@ Table of Contents
 * [Video - All the videos of Security Talks by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmEL56fb5AnZCM8pXXFfJS0n)
 * [Video - All the videos of Tools by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmF_CB9VYbcAhiyg1i1IYaWP)
 * [Video - All the videos of Mainframe Hacking by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmGdX1OE_xjK0GKGjSLwxVn_)
-
 * [How to Break into z/OS Systems - Staurt Henderson](http://www.stuhenderson.com/XBRKZTXT.PDF)
 * [How to Break Into z/OS Systems Through USS, TCP/IP, and the Internet](http://www.stuhenderson.com/STUuss01.pdf)
 * [Video - Mainframe [z/OS] Reverse Engineering & Exploit Development by @bigendiansmalls](https://www.bigendiansmalls.com/files/us-18-Rikansrud-Mainframe-[zOS]-Reverse-Engineering-and-Exploit-Development_Publish.mp4)
@@ -229,14 +268,13 @@ Table of Contents
 ## [↑](#table-of-contents) STIGs
 * [z/OS TSS STIG](https://www.stigviewer.com/stig/zos_tss/)
 * [z/OS RACF STIG](https://www.stigviewer.com/stig/zos_racf/)
-
+* [DoD Security Technical implementation Guides(STIGS) - Search for ACF2, Z/OS, RACF etc.](https://public.cyber.mil/stigs/downloads/)
 
 ## [↑](#table-of-contents) Misc
 * [Mainframe Hacking - Choose Your own Adventure Game](https://archive.org/details/MainframeHackingCYOA)
 * [Evil Mainframe Hacking Training/Course](https://evilmainframe.com/)
 * [CBT Tape - Collection of Freeware & Open Source distribution of IBM mainframe MVS & OS/360 Environments](http://www.cbttape.org/)
 * [z/OS Internet Library by IBM - Collection of manuals,guides & books about z/OS ](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosInternetLibrary)
-* [DoD Security Technical implementation Guides(STIGS) - Search for ACF2, Z/OS, RACF etc.](https://public.cyber.mil/stigs/downloads/)
 * [Default Accounts](https://github.com/hacksomeheavymetal/zOS/blob/master/default_accounts.txt)
 
 

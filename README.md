@@ -17,7 +17,7 @@ Table of Contents
  	* [Books](#-Books)
  	* [Tutorials](#-Tutorials)
 	* [Concepts and Terms](#-Concepts-and-Terms)
-	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-z/OS-Security)
+	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-zOS-Security)
  	* [Scripts & Tools](#-Scripts-and-Tools)
  	* [Presentations & Talks](#-Presentations-and-Talks)
  	* [ACF2 Specific references](#-ACF2-Specific-references)
@@ -71,7 +71,7 @@ Table of Contents
 * TPX - similar to the gnu-screen
 
 
-## [↑](#table-of-contents) Top Ten Security Vulnerabilities in z/OS Security
+## [↑](#table-of-contents) Top Ten Security Vulnerabilities in zOS Security
 [Reference](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
 * Excessive Number of User ID’s w/No Password Interval
 * Inappropriate Usage of z/OS UNIX Superuser Privilege, UID = 0

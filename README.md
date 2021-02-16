@@ -16,6 +16,7 @@ Table of Contents
 * [IBM zSeries](#-IBM-zSeries)
  	* [Books](#-Books)
  	* [Tutorials](#-Tutorials)
+	* [Concepts and Terms](#-Concepts-and-Terms)
  	* [Scripts & Tools](#-Scripts-and-Tools)
  	* [Presentations & Talks](#-Presentations-and-Talks)
  	* [ACF2 Specific references](#-ACF2-Specific-references)
@@ -46,6 +47,40 @@ Table of Contents
 * [Multiple Mainframe Security guides from Chicago Classic Computing](http://chiclassiccomp.org/docs/content/computing/IBM/Mainframe/MainframeSecurity/)
 * [Using UNIX System Services to escalate your privileges on z/OS](https://www.bigendiansmalls.com/all-aboard-the-uss-exploits/)
 * [The crash course to z/OS pentesting](https://github.com/hacksomeheavymetal/zOS/blob/master/pentesting.md) by [@hacksomeheavymetal](https://github.com/hacksomeheavymetal)
+
+## [↑](#table-of-contents) Concepts and Terms
+* REXX files - the equivalent of Python (scripting language)
+* JCL files - the equivalent of bash scripts
+* CLIST - the equivalent of a scripting language
+* TSO - z/OS cli/bash
+* LPAR - logical partition - allocation of cpu disk and mem (z/OS VM equivalent)
+* SYSPLEX - multiple LPARS
+* CICS / IMS - Transaction Managers (Apps running COBOL, Fortran or Java)
+* TN3270/E - 3270 terminal emulation over Telnet
+* SNA - Systems Network Architecture
+* VTAM - Virtual Telecommunications Access Method Subsystem that implements
+* SNA - Often the first thing you connect to on a mainframe
+* LU / PU - Logical/Physical Unit – Connections to VTAM (wired vs multiplexed) – TN3270 to mainframe usually gives you a LU
+* ISPF - Menu screens (GUI) (most people use the ISPF)
+* DATASETS - "files"
+* PDS or PARTIONED DATASETS - "folders"
+* OMVS / USS - Unix subsystem for network, FTP, webservices support
+* APF - programs that are setuid 0
+* TPX - similar to the gnu-screen
+
+## [↑](#table-of-contents) Top Ten Security Vulnerabilities inz/OS Security
+[Reference](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
+* Excessive Number of User ID’s w/No Password Interval
+* Inappropriate Usage of z/OS UNIX Superuser Privilege, UID = 0
+* Data Set Profiles with UACC Greater than READ
+* RACF Database is not Adequately Protected
+* Excessive Access to APF Libraries
+* General Resource Profiles in WARN Mode
+* Production Batch Jobs have Excessive Resource Access
+* Data Set Profiles with UACC of READ
+* Improper Use or Lack of UNIXPRIV Profiles
+* Started Task IDs are not Defined as PROTECTED IDs
+
 
 ## [↑](#table-of-contents) Scripts and Tools
 * [TN3270 Clients - X3270](http://x3270.bgp.nu/)

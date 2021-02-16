@@ -17,6 +17,7 @@ Table of Contents
  	* [Books](#-Books)
  	* [Tutorials](#-Tutorials)
 	* [Concepts and Terms](#-Concepts-and-Terms)
+	* [Typical TCP Ports](#-Typical-TCP-Ports)
 	* [Emulate zOS](#-Emulate-zOS)
 	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-zOS-Security)
  	* [Scripts & Tools](#-Scripts-and-Tools)
@@ -52,38 +53,83 @@ Table of Contents
 
 
 ## [↑](#table-of-contents) Concepts and Terms
-[Reference: slides 6-10](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+[Reference(s)](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+[Reference(s)](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
+* **Legacy password policy but YMMV**
+  * 8 char length restrictions
+  * No special chars
 * **Subsystems**
-  * RACF - **racf.db stores all password hashes, provides access control and more**
   * ACF-2
+  * RACF
+    * The "racf.db" file stores all password hashes, provides access control and more
+    * There are three main security attributes on RACF:
+      * **Special** : can alter RACF rules and access any resource
+      * **Operations** : access all files unless being forbidden from doing so
+      * **Auditor** : access audit trails and manage logging classes
 * **REXX files** - The equivalent of Python (scripting language)
 * **JCL files** - The equivalent of bash scripts
 * **CLIST** - The equivalent of a scripting language
 * **TSO** - z/OS cli (Linux bash equivalent)
-  * "traditional" process accounting
+  * Login as a user enumeration flaw via on-screen error messages
+  * "Traditional" process accounting
   * CLIST/REXX/JCL scripting
   * OMVS / USS – Unix
   * ISPF - Menu Screens (GUI)
 * **LPAR or Logical partition** - allocation of cpu, disk and mem resources (z/OS VMs equivalent) - Each LPAR can run different stuff e.g. IBM z/OS (mainframe) or with z/VM Linux (RedHat)
 * **SYSPLEX** - Multiple LPARS (across hardware too)
-* **CICS / IMS** - Transaction Managers
+* **CICS / IMS**
+  * Transaction Managers
+  * CICS is a middleware of sorts
+  * If we manage to "exit" the application running on CICS, we can instruct CICS to execute default admin programs (CECI, CEMT, etc.) => rarely secured
 * **Applications** - Run COBOL, Fortran or Java
 * **TN3270/E** - 3270 terminal emulation over Telnet
+  * Telnet-like protocol introduced in 1971
+  * Allowed "green screen" terminals to go over network TCP/IP rather than hardwire
+  * Transmits "screens" made up of fields
+  * Response submits modified screen & fields
+  * Synchronous & Stateful
+  * All apps presented in same way – i.e. TSO, CICS, IMS, REXX etc. all use it
+  * Emulator client can be modified to reveal HIDDEN/non-display fields and edit PROTECTED fields
 * **SNA** - Systems Network Architecture
-* **VTAM** - Virtual Telecommunications Access Method Subsystem that implements
-* **SNA** - Often the first thing you connect to on a mainframe
+* **VTAM**
+  * Virtual Telecommunications Access Method Subsystem that implements SNA
+  * Multiplexer of sorts
+  * Often the first thing you connect to on a mainframe
+  * Lets you connect to different application – Can connect you to other LPARs & sysplex’s
+  * Uses APPLIDs or "macros"
 * **LU / PU** - Logical/Physical Unit – Connections to VTAM (wired vs multiplexed) – TN3270 to mainframe usually gives you a LU
-* **ISPF** - Menu screens (GUI) (most people use the ISPF)
+* **ISPF** - Menu screens (GUI) - most people use the ISPF
 * **DATASETS** - The "file" z/OS concept
 * **PDS or PARTITIONED DATASETS** - The "folder" z/OS concept
 * **OMVS / USS** - Unix subsystem for network, FTP, webservices support
 * **APF** - Programs that are setuid 0
 * **TPX** - Similar to the gnu-screen
+* **App Creds**
+  * User enumeration flaws are common
+  * Sometimes weaker password policies
 * **Other stuff**
   * Databases: DB2 & IMS
   * Unix: FTP, HTTP, WebSphere
   * MQ
   * Etc
+
+
+## [↑](#table-of-contents) Typical TCP Ports
+[Reference(s) slides 12](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+* **Over TN3270
+  * 23 - default, often VTAM
+  * 992 - default, SSL enabled
+  * 1023-x0xx - application environments (direct to CICS/IMS regions)
+  * 2323, x023, x992 - other ports to check
+* **FTP (TCP/21)
+  * Provides access to both worlds (TSO & OMVS)
+  * Respects wildcards (*.RACF*.*)
+  * Awesome brute forcing point
+* **Other
+  * DB2 (5023) & MQ (1415)
+  * HP/BMC/Tivoli monitoring
+  * WebSphere
+* **Note: One host can have lots of IPs (Order of 10-20)
 
 
 ## [↑](#table-of-contents) Emulate zOS
@@ -92,7 +138,7 @@ Table of Contents
 
 
 ## [↑](#table-of-contents) Top Ten Security Vulnerabilities in zOS Security
-[Reference](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
+[Reference(s)](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
 * Excessive Number of User ID’s w/No Password Interval
 * Inappropriate Usage of z/OS UNIX Superuser Privilege, UID = 0
 * Data Set Profiles with UACC Greater than READ

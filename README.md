@@ -19,6 +19,7 @@ Table of Contents
  	* [Scripts & Tools](#-Scripts-and-Tools)
  	* [Presentations & Talks](#-Presentations-and-Talks)
  	* [ACF2 Specific references](#-ACF2-Specific-references)
+	* [Security Technical Implementation Guides (STIGs)](#-STIGs)
  	* [Misc](#-misc)
 * [IBM iSeries](#-IBM-iSeries)
  	* [iSeries Books](#-iSeries-Books)
@@ -114,6 +115,9 @@ Table of Contents
 * [CA ACF2 for z/OS - 16.0 Documentation](https://docops.ca.com/ca-acf2-for-z-os/16-0/en)
 * [GIAC - ACF2 Mainframe Security](https://www.giac.org/paper/gsec/2812/acf2-mainframe-security/104768)
 
+## [↑](#table-of-contents) STIGs
+* [z/OS TSS STIG](https://www.stigviewer.com/stig/zos_tss/)
+* [z/OS RACF STIG](https://www.stigviewer.com/stig/zos_racf/)
 
 ## [↑](#table-of-contents) Misc
 * [Mainframe Hacking - Choose Your own Adventure Game](https://archive.org/details/MainframeHackingCYOA)

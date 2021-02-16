@@ -67,13 +67,13 @@ Table of Contents
       * **Special** : can alter RACF rules and access any resource
       * **Operations** : access all files unless being forbidden from doing so
       * **Auditor** : access audit trails and manage logging classes
-* **REXX files** - The equivalent of Python (scripting language)
+* **REXX files** - The equivalent of scripting language like Python
 * **JCL files**
   * The equivalent of bash scripts
   * You can submit Jobs in JCL over FTP
-* **CLIST** - The equivalent of a scripting language
+* **CLIST** - The equivalent of scripting language like Python
 * **TSO** - z/OS cli (Linux bash equivalent)
-  * Login as a user enumeration flaw via on-screen error messages
+  * Login has a user enumeration flaw via on-screen error messages
   * "Traditional" process accounting
   * CLIST/REXX/JCL scripting
   * OMVS / USS – Unix

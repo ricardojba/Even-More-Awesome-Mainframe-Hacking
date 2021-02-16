@@ -19,6 +19,7 @@ Table of Contents
 	* [Concepts and Terms](#-Acronyms-and-Concepts)
 	* [Typical TCP Ports](#-Typical-TCP-Ports)
 	* [Emulate zOS](#-Emulate-zOS)
+	* [zOS booting, logging and working environments](#-zOS-booting,-logging-and-working-environments)
 	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-zOS-Security)
  	* [Scripts & Tools](#-Scripts-and-Tools)
  	* [Presentations & Talks](#-Presentations-and-Talks)
@@ -157,18 +158,21 @@ Table of Contents
 * [Hercules Opensource zARCH Emulator](http://www.hercules-390.org) (Free)
 * [Emulating a MVS/zOS with Hercules](https://famicoman.com/2018/06/28/emulating-a-z-os-mainframe-with-hercules/)
 * [YARGHHH! Avast! :) ](https://pastebin.com/PHiT8jm)
-* [z/OS booting, logging and working environments](https://github.com/hacksomeheavymetal/zOS/blob/master/firststeps.md)
 
-## Logging in:
+
+## [↑](#table-of-contents) zOS booting, logging and working environments
+Logging in:
 - On the login screen enter credentials, e.g.:
+
   `login: ibmuser`
   `pass: sys1`
   `proc: ISPFPROC|OMVSPROC|IKJACCNT`
   
 - On the welcome screen enter userid and see 2.1., e.g.:
+
   `logon ibmuser`
 
-## Working environments:
+Working environments:
 Depending on the chosen procedure you will end up in on of the working environments.
 - ISPF:
   Courses-like environment with various panels. Allows to perform various tasks on its own, execute commands in TSO, run installed utilities in the z/OS etc.
@@ -177,7 +181,7 @@ Depending on the chosen procedure you will end up in on of the working environme
 - TSO:
   Time Sharing Option is like a login session on linux. Very basic. You can run various commands and applications including "omvs" and "ispf". By typing "ishell" you can run ISPF shell that allows you to run commands in the OMVS.
 
-# Basic navigation:
+Basic navigation:
 In the ISPF-like programs:
   - PF10/PF11 shifts screen view right/left to see all displayed info
   - PF7/PF8 scrolls screen view up/down to see all displayed info
@@ -185,6 +189,7 @@ In the ISPF-like programs:
   - use "File -> Save screen contents" in x3270 (or similar) to save output from the terminal to a local file
   - you can abbreviate some of the commands, e.g. setropts -> setr, listcat -> listc etc.
 
+[Reference](https://github.com/hacksomeheavymetal/zOS/blob/master/firststeps.md)
 
 
 ## [↑](#table-of-contents) Top Ten Security Vulnerabilities in zOS Security

@@ -52,24 +52,38 @@ Table of Contents
 
 
 ## [↑](#table-of-contents) Concepts and Terms
-* **REXX files** - the equivalent of Python (scripting language)
-* **JCL files** - the equivalent of bash scripts
-* **CLIST** - the equivalent of a scripting language
-* **TSO** - z/OS cli/bash
-* **LPAR** - logical partition - allocation of cpu disk and mem (z/OS VM equivalent)
-* **SYSPLEX** - multiple LPARS
-* **CICS / IMS** - Transaction Managers (Apps running COBOL, Fortran or Java)
+[Reference: slides 6-10](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+* **Subsystems**
+  * RACF - **racf.db stores all password hashes, provides access control and more**
+  * ACF-2
+* **REXX files** - The equivalent of Python (scripting language)
+* **JCL files** - The equivalent of bash scripts
+* **CLIST** - The equivalent of a scripting language
+* **TSO** - z/OS cli (Linux bash equivalent)
+  * "traditional" process accounting
+  * CLIST/REXX/JCL scripting
+  * OMVS / USS – Unix
+  * ISPF - Menu Screens (GUI)
+* **LPAR or Logical partition** - allocation of cpu, disk and mem resources (z/OS VMs equivalent) - Each LPAR can run different stuff e.g. IBM z/OS (mainframe) or with z/VM Linux (RedHat)
+* **SYSPLEX** - Multiple LPARS (across hardware too)
+* **CICS / IMS** - Transaction Managers
+* **Applications** - Run COBOL, Fortran or Java
 * **TN3270/E** - 3270 terminal emulation over Telnet
 * **SNA** - Systems Network Architecture
 * **VTAM** - Virtual Telecommunications Access Method Subsystem that implements
 * **SNA** - Often the first thing you connect to on a mainframe
 * **LU / PU** - Logical/Physical Unit – Connections to VTAM (wired vs multiplexed) – TN3270 to mainframe usually gives you a LU
 * **ISPF** - Menu screens (GUI) (most people use the ISPF)
-* **DATASETS** - "file" z/OS concept
-* **PDS** or PARTITIONED DATASETS - "folders" z/OS concept
+* **DATASETS** - The "file" z/OS concept
+* **PDS or PARTITIONED DATASETS** - The "folder" z/OS concept
 * **OMVS / USS** - Unix subsystem for network, FTP, webservices support
-* **APF** - programs that are setuid 0
-* **TPX** - similar to the gnu-screen
+* **APF** - Programs that are setuid 0
+* **TPX** - Similar to the gnu-screen
+* **Other stuff**
+  * Databases: DB2 & IMS
+  * Unix: FTP, HTTP, WebSphere
+  * MQ
+  * Etc
 
 
 ## [↑](#table-of-contents) Emulate zOS

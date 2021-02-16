@@ -116,20 +116,20 @@ Table of Contents
 
 ## [↑](#table-of-contents) Typical TCP Ports
 [Reference(s) slides 12](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
-* **Over TN3270
+* **Over TN3270**
   * 23 - default, often VTAM
   * 992 - default, SSL enabled
   * 1023-x0xx - application environments (direct to CICS/IMS regions)
   * 2323, x023, x992 - other ports to check
-* **FTP (TCP/21)
+* **FTP (TCP/21)**
   * Provides access to both worlds (TSO & OMVS)
   * Respects wildcards (*.RACF*.*)
   * Awesome brute forcing point
-* **Other
+* **Other**
   * DB2 (5023) & MQ (1415)
   * HP/BMC/Tivoli monitoring
   * WebSphere
-* **Note: One host can have lots of IPs (Order of 10-20)
+* **Note: One host can have lots of IPs (Order of 10-20)**
 
 
 ## [↑](#table-of-contents) Emulate zOS

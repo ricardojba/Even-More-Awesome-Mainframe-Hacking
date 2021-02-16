@@ -55,6 +55,7 @@ Table of Contents
 ## [↑](#table-of-contents) Concepts and Terms
 [Reference(s)](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
 [Reference(s)](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
+* **Username limited to 7 char length**
 * **Legacy password policy but YMMV**
   * 8 char length restrictions
   * No special chars
@@ -67,7 +68,9 @@ Table of Contents
       * **Operations** : access all files unless being forbidden from doing so
       * **Auditor** : access audit trails and manage logging classes
 * **REXX files** - The equivalent of Python (scripting language)
-* **JCL files** - The equivalent of bash scripts
+* **JCL files**
+  * The equivalent of bash scripts
+  * You can submit Jobs in JCL over FTP
 * **CLIST** - The equivalent of a scripting language
 * **TSO** - z/OS cli (Linux bash equivalent)
   * Login as a user enumeration flaw via on-screen error messages
@@ -98,7 +101,10 @@ Table of Contents
   * Lets you connect to different application – Can connect you to other LPARs & sysplex’s
   * Uses APPLIDs or "macros"
 * **LU / PU** - Logical/Physical Unit – Connections to VTAM (wired vs multiplexed) – TN3270 to mainframe usually gives you a LU
-* **ISPF** - Menu screens (GUI) - most people use the ISPF
+* **ISPF** 
+  * Menu screens (GUI)
+  * What everyone uses to interact with TSO
+  * Includes file browser & editor
 * **DATASETS** - The "file" z/OS concept
 * **PDS or PARTITIONED DATASETS** - The "folder" z/OS concept
 * **OMVS / USS** - Unix subsystem for network, FTP, webservices support
@@ -134,6 +140,7 @@ Table of Contents
 
 ## [↑](#table-of-contents) Emulate zOS
 * [Hercules Opensource zARCH Emulator](http://www.hercules-390.org) (Free)
+  * https://pastebin.com/PHiT8jmE
 * RDZ&T IBM zSystem Personal Development Tool (Paid and expensive) 
 
 

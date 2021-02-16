@@ -52,8 +52,6 @@ Table of Contents
 
 
 ## [↑](#table-of-contents) Acronyms and Concepts
-[Reference(s)](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
-[Reference(s)](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
 
 **[The complete list of z/OS acronyms](https://github.com/hacksomeheavymetal/zOS/blob/master/vocabulary.md)**
 
@@ -131,9 +129,12 @@ Table of Contents
   * MQ
   * Etc
 
+[More References 1](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+
+[More References 2](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
+
 
 ## [↑](#table-of-contents) Typical TCP Ports
-[Reference(s) slides 12](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
 * **TN3270**
   * 23 - default, often VTAM
   * 992 - default, SSL enabled
@@ -148,6 +149,8 @@ Table of Contents
   * HP/BMC/Tivoli monitoring
   * WebSphere
 * **Note: One host can have lots of IPs (Order of 10-20)**
+
+[Reference (slide 12)](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
 
 
 ## [↑](#table-of-contents) Emulate zOS

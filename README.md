@@ -246,7 +246,7 @@ In the ISPF-like programs:
 
 ## [↑](#table-of-contents) Default Accounts and Transactions
 * [Default Accounts](https://github.com/hacksomeheavymetal/zOS/blob/master/default_accounts.txt)
-* [Default_CICS_Transactions](https://github.com/hacksomeheavymetal/zOS/blob/master/default_cics_transactions.txt)
+* [Default CICS Transactions](https://github.com/hacksomeheavymetal/zOS/blob/master/default_cics_transactions.txt)
 
 
 ## [↑](#table-of-contents) Presentations and Talks

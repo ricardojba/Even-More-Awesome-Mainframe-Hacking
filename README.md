@@ -116,7 +116,7 @@ Table of Contents
 
 ## [↑](#table-of-contents) Typical TCP Ports
 [Reference(s) slides 12](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
-* **Over TN3270**
+* **TN3270**
   * 23 - default, often VTAM
   * 992 - default, SSL enabled
   * 1023-x0xx - application environments (direct to CICS/IMS regions)

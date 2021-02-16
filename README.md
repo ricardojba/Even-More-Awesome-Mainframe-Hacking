@@ -25,7 +25,7 @@ Table of Contents
  	* [Presentations & Talks](#-Presentations-and-Talks)
  	* [ACF2 Specific references](#-ACF2-Specific-references)
 	* [Security Technical Implementation Guides (STIGs)](#-STIGs)
- 	* [Misc](#-Misc)
+ 	* [Miscellaneous](#-Miscellaneous)
 * [IBM iSeries](#-IBM-iSeries)
  	* [iSeries Books](#-iSeries-Books)
  	* [Tutorials & Checklists](#-Tutorials-and-Checklists)
@@ -130,9 +130,9 @@ Table of Contents
   * MQ
   * Etc
 
-[More References 1](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+[Reference 1](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
 
-[More References 2](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
+[Reference 2](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
 
 
 ## [↑](#table-of-contents) Typical TCP Ports
@@ -161,12 +161,12 @@ Table of Contents
 
 
 ## [↑](#table-of-contents) zOS booting, logging and working environments
-Logging in:
+**Logging in:**
 - On the login screen enter credentials, e.g.:
 
   `login: ibmuser`
   
-  `pass: sys1`
+  `pass: sys1 or <empty>`
   
   `proc: ISPFPROC|OMVSPROC|IKJACCNT`
   
@@ -175,7 +175,7 @@ Logging in:
 
   `logon ibmuser`
 
-Working environments:
+**Working environments:**
 Depending on the chosen procedure you will end up in on of the working environments.
 - ISPF:
   Courses-like environment with various panels. Allows to perform various tasks on its own, execute commands in TSO, run installed utilities in the z/OS etc.
@@ -184,7 +184,7 @@ Depending on the chosen procedure you will end up in on of the working environme
 - TSO:
   Time Sharing Option is like a login session on linux. Very basic. You can run various commands and applications including "omvs" and "ispf". By typing "ishell" you can run ISPF shell that allows you to run commands in the OMVS.
 
-Basic navigation:
+**Basic navigation:**
 In the ISPF-like programs:
   - PF10/PF11 shifts screen view right/left to see all displayed info
   - PF7/PF8 scrolls screen view up/down to see all displayed info
@@ -196,7 +196,6 @@ In the ISPF-like programs:
 
 
 ## [↑](#table-of-contents) Top Ten Security Vulnerabilities in zOS Security
-[Reference(s)](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
 * Excessive Number of User ID’s w/No Password Interval
 * Inappropriate Usage of z/OS UNIX Superuser Privilege, UID = 0
 * Data Set Profiles with UACC Greater than READ
@@ -207,6 +206,9 @@ In the ISPF-like programs:
 * Data Set Profiles with UACC of READ
 * Improper Use or Lack of UNIXPRIV Profiles
 * Started Task IDs are not Defined as PROTECTED IDs
+
+
+[Reference](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
 
 
 ## [↑](#table-of-contents) Scripts and Tools
@@ -279,9 +281,11 @@ In the ISPF-like programs:
 ## [↑](#table-of-contents) STIGs
 * [z/OS TSS STIG](https://www.stigviewer.com/stig/zos_tss/)
 * [z/OS RACF STIG](https://www.stigviewer.com/stig/zos_racf/)
+* [z/OS ACF2 STIG](https://www.stigviewer.com/stig/zos_acf2/)
 * [DoD Security Technical implementation Guides(STIGS) - Search for ACF2, Z/OS, RACF etc.](https://public.cyber.mil/stigs/downloads/)
 
-## [↑](#table-of-contents) Misc
+
+## [↑](#table-of-contents) Miscellaneous
 * [Mainframe Hacking - Choose Your own Adventure Game](https://archive.org/details/MainframeHackingCYOA)
 * [Evil Mainframe Hacking Training/Course](https://evilmainframe.com/)
 * [CBT Tape - Collection of Freeware & Open Source distribution of IBM mainframe MVS & OS/360 Environments](http://www.cbttape.org/)

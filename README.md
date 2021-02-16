@@ -166,12 +166,11 @@ Table of Contents
 - On the login screen enter credentials, e.g.:
 
   `login: ibmuser`
-  
+
   `pass: sys1 or <empty>`
-  
+
   `proc: ISPFPROC|OMVSPROC|IKJACCNT`
-  
-  
+
 - On the welcome screen enter userid and see 2.1., e.g.:
 
   `logon ibmuser`
@@ -296,7 +295,7 @@ In the ISPF-like programs:
 * [Evil Mainframe Hacking Training/Course](https://evilmainframe.com/)
 * [CBT Tape - Collection of Freeware & Open Source distribution of IBM mainframe MVS & OS/360 Environments](http://www.cbttape.org/)
 * [z/OS Internet Library by IBM - Collection of manuals,guides & books about z/OS ](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosInternetLibrary)
-
+* [z/OS - all things security](https://github.com/hacksomeheavymetal/zOS)
 
 
 

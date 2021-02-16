@@ -17,6 +17,7 @@ Table of Contents
  	* [Books](#-Books)
  	* [Tutorials](#-Tutorials)
 	* [Concepts and Terms](#-Concepts-and-Terms)
+	* [Emulate zOS](#-Emulate-zOS)
 	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-zOS-Security)
  	* [Scripts & Tools](#-Scripts-and-Tools)
  	* [Presentations & Talks](#-Presentations-and-Talks)
@@ -69,6 +70,11 @@ Table of Contents
 * OMVS / USS - Unix subsystem for network, FTP, webservices support
 * APF - programs that are setuid 0
 * TPX - similar to the gnu-screen
+
+
+## [↑](#table-of-contents) Emulate zOS
+* [Hercules Opensource zARCH Emulator](http://www.hercules-390.org) (Free)
+* RDZ&T IBM zSystem Personal Development Tool (Paid and expensive) 
 
 
 ## [↑](#table-of-contents) Top Ten Security Vulnerabilities in zOS Security

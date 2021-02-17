@@ -18,7 +18,7 @@ Table of Contents
  	* [Tutorials](#-Tutorials)
 	* [Concepts and Terms](#-Acronyms-and-Concepts)
 	* [Typical TCP Ports](#-Typical-TCP-Ports)
-	* [Web based Thin Clients Terminal Emulators](#-](#-Web-based-Thin-Clients-Terminal-Emulators)
+	* [Web based Thin Clients Terminal Emulators](#-Web-based-Thin-Clients-Terminal-Emulators)
 	* [Emulate zOS](#-Emulate-zOS)
 	* [zOS booting, logging and working environments](#-zOS-booting,-logging-and-working-environments)
 	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-zOS-Security)

@@ -229,6 +229,7 @@ In the ISPF-like programs:
 	* [cics-info.nse](https://nmap.org/nsedoc/scripts/cics-info.html) - needs valid account and applid
 	* [cics-user-brute.nse](https://nmap.org/nsedoc/scripts/cics-user-brute.html) - needs valid applid
 	* [cics-user-enum.nse](https://nmap.org/nsedoc/scripts/cics-user-enum.html) - needs valid applid
+* [TSO-Brute](https://github.com/mainframed/TSO-Brute)
 * [TPX Brute - The z/OS TPX logon panel brute forcer](https://github.com/quentinhardy/TPX-Brute)
 * [RACF Database Parser](https://github.com/bigendiansmalls/racfdbparse)
 * Mainframe Application pentesting (CICS etc.)
@@ -243,7 +244,8 @@ In the ISPF-like programs:
 * [FTP - JCL commmand execution - Metasploit Modules by @bigendiansmalls](https://github.com/rapid7/metasploit-framework/blob/master/documentation/modules/exploit/mainframe/ftp/ftp_jcl_creds.md)
 * [Metasploit Payloads for z/OS](https://github.com/rapid7/metasploit-framework/tree/12198a088132f047e0a86724bc5ebba92a73ac66/modules/payloads/singles/cmd/mainframe)
 * [NC110-OMVS Netcat for z/OS OMVS](https://github.com/mainframed/NC110-OMVS)
-* [TShOcker - Mini command interpreter for TSO & UNIX accessible by NetCat](https://github.com/mainframed/TShOcker)		
+* [TShOcker - Mini command interpreter for TSO & UNIX accessible by NetCat](https://github.com/mainframed/TShOcker)
+* [MainTP](https://github.com/mainframed/MainTP)
 * [zOS Privilege Escalation scripts by ayoul3__](https://github.com/ayoul3/Privesc)
 * [Note on TESTAUTH command for running a program in elevated state](https://github.com/zBit31/testauth)
 * [zOSFTPlib - python ftplib-like library specifically for Z/OS](https://pypi.org/project/zosftplib/)
@@ -302,6 +304,7 @@ In the ISPF-like programs:
 * [CBT Tape - Collection of Freeware & Open Source distribution of IBM mainframe MVS & OS/360 Environments](http://www.cbttape.org/)
 * [z/OS Internet Library by IBM - Collection of manuals,guides & books about z/OS ](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosInternetLibrary)
 * [z/OS - all things security](https://github.com/hacksomeheavymetal/zOS)
+* [IBM z/OS Management Facility web application arbitrary file read](https://www.whiteoaksecurity.com/2019-12-30-0-day-in-a-multi-million-dollar-machine/)
 
 
 

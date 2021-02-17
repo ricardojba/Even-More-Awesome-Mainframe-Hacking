@@ -18,6 +18,7 @@ Table of Contents
  	* [Tutorials](#-Tutorials)
 	* [Concepts and Terms](#-Acronyms-and-Concepts)
 	* [Typical TCP Ports](#-Typical-TCP-Ports)
+	* [Typical TCP Ports](#-Web-based-Thin-Clients-Terminal-Emulators)
 	* [Emulate zOS](#-Emulate-zOS)
 	* [zOS booting, logging and working environments](#-zOS-booting,-logging-and-working-environments)
 	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-zOS-Security)
@@ -147,13 +148,17 @@ Table of Contents
   * Provides access to both worlds (TSO & OMVS)
   * Respects wildcards (*.RACF*.*)
   * Awesome brute forcing point
-* **Other**
+C
   * DB2 (5023) & MQ (1415)
   * HP/BMC/Tivoli monitoring
   * WebSphere
 * **Note: One host can have lots of IPs (Order of 10-20)**
 
 [Reference (slide 12)](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+
+
+## [↑](#table-of-contents) Web based Thin Clients Terminal Emulators
+* **[Virtel Web Access](https://virtelweb.com)**
 
 
 ## [↑](#table-of-contents) Emulate zOS

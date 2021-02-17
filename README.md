@@ -225,14 +225,14 @@ In the ISPF-like programs:
 	* [tso-brute.nse](https://nmap.org/nsedoc/scripts/tso-brute.html)
 	* [vtam-enum.nse](https://nmap.org/nsedoc/scripts/vtam-enum.html)
 	* [lu-enum.nse](https://nmap.org/nsedoc/scripts/lu-enum.html)
-	* [cics-enum.nse](https://nmap.org/nsedoc/scripts/cics-enum.html)
-	* [cics-info.nse](https://nmap.org/nsedoc/scripts/cics-info.html)
-	* [cics-user-brute.nse](https://nmap.org/nsedoc/scripts/cics-user-brute.html)
-	* [cics-user-enum.nse](https://nmap.org/nsedoc/scripts/cics-user-enum.html)
+	* [cics-enum.nse](https://nmap.org/nsedoc/scripts/cics-enum.html) - needs valid account and applid
+	* [cics-info.nse](https://nmap.org/nsedoc/scripts/cics-info.html) - needs valid account and applid
+	* [cics-user-brute.nse](https://nmap.org/nsedoc/scripts/cics-user-brute.html) - needs valid applid
+	* [cics-user-enum.nse](https://nmap.org/nsedoc/scripts/cics-user-enum.html) - needs valid applid
 * [TPX Brute - The z/OS TPX logon panel brute forcer](https://github.com/quentinhardy/TPX-Brute)
 * [RACF Database Parser](https://github.com/bigendiansmalls/racfdbparse)
 * Mainframe Application pentesting (CICS etc.)
-	* [CICSPwn](https://github.com/ayoul3/cicspwn)
+	* [CICSPwn](https://github.com/ayoul3/cicspwn) - If your account has access to the CICS trans. "CECI" you can upload JCL and get a shell
 	* [BIRP](https://github.com/sensepost/birp)
 	* [CICSshot - Take screenshots of CICS](https://github.com/ayoul3/cicsshot)
 	* [Hacked wc3270 emulator](https://github.com/ayoul3/wc3270_hacked)	

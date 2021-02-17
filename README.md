@@ -229,6 +229,7 @@ In the ISPF-like programs:
 	* [cics-info.nse](https://nmap.org/nsedoc/scripts/cics-info.html) - needs valid account and applid
 	* [cics-user-brute.nse](https://nmap.org/nsedoc/scripts/cics-user-brute.html) - needs valid applid
 	* [cics-user-enum.nse](https://nmap.org/nsedoc/scripts/cics-user-enum.html) - needs valid applid
+	* [nje-node-brute.nse](https://nmap.org/nsedoc/scripts/nje-node-brute.html)
 * [TSO-Brute](https://github.com/mainframed/TSO-Brute)
 * [TPX Brute - The z/OS TPX logon panel brute forcer](https://github.com/quentinhardy/TPX-Brute)
 * [RACF Database Parser](https://github.com/bigendiansmalls/racfdbparse)

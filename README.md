@@ -24,6 +24,7 @@ Table of Contents
 	* [Top Ten Security Vulnerabilities in z/OS Security](#-Top-Ten-Security-Vulnerabilities-in-zOS-Security)
  	* [Scripts & Tools](#-Scripts-and-Tools)
  	* [Default Accounts and Transactions](#-Default-Accounts-and-Transactions)
+ 	* [Pentesting](#-Pentesting)
  	* [Presentations & Talks](#-Presentations-and-Talks)
  	* [ACF2 Specific references](#-ACF2-Specific-references)
 	* [Security Technical Implementation Guides (STIGs)](#-STIGs)
@@ -181,6 +182,14 @@ C
 
   `logon ibmuser`
 
+- In some cases you may need to confirm that you are in VTAM or CICS - run this:
+
+  `ibmtest`
+
+- VTAM returns the following alphanumeric sequence:
+
+  `IBMECHO ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`
+
 **Working environments:**
 Depending on the chosen procedure you will end up in on of the working environments.
 - ISPF:
@@ -258,6 +267,37 @@ In the ISPF-like programs:
 ## [↑](#table-of-contents) Default Accounts and Transactions
 * [Default Accounts](https://github.com/hacksomeheavymetal/zOS/blob/master/default_accounts.txt)
 * [Default CICS Transactions](https://github.com/hacksomeheavymetal/zOS/blob/master/default_cics_transactions.txt)
+
+
+## [↑](#table-of-contents) Pentesting
+
+
+This is a small pentest guide based on several Talks and presentations available on the Internet, namely tasks and tools to run for each steps listed bellow.
+
+Mainframes are just computers... costing ungodly prices with also ungodly high specs and availability capacity.
+
+That said unless theres something very wrong with it, it will hold high loads.
+
+Before starting ask the Team or person that manages the Mainframe if there is a TEST or QA LPAR(s) or Sysplex(s) that mirror PROD. Its preferable to test those. As with every typical security assessment there is always lots of reservations by the teams or person managing the systems. This is especially true since these are very expensive systems handling probably the most mission critical operations in the company. Remember to tell them that you are there to help them secure their systems and not to make their lives harder. Respect them and win them over, because they probably are the same age as your father or mother (or even older) ;)
+
+**Initial Recon**
+
+First off... without valid credentials not much can be done, so it is important to find valid creds.
+
+
+**Gaining Access**
+
+[todo]
+
+
+**Local Recon**
+
+[todo]
+
+
+**Privilege Escalation**
+
+[todo]
 
 
 ## [↑](#table-of-contents) Presentations and Talks

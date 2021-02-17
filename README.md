@@ -218,7 +218,7 @@ In the ISPF-like programs:
 
 
 ## [↑](#table-of-contents) Scripts and Tools
-* [TN3270 Clients - X3270](http://x3270.bgp.nu/)
+* [TN3270 Clients - X3270](http://x3270.bgp.nu)
 * [Multipurpose Nmap Scripts](https://github.com/nmap/nmap/tree/master/scripts)
 	* [tn3270-screen.nse](https://nmap.org/nsedoc/scripts/tn3270-screen.html)
 	* [tso-enum.nse](https://nmap.org/nsedoc/scripts/tso-enum.html)
@@ -234,6 +234,8 @@ In the ISPF-like programs:
 * [TSO-Brute](https://github.com/mainframed/TSO-Brute)
 * [TPX Brute - The z/OS TPX logon panel brute forcer](https://github.com/quentinhardy/TPX-Brute)
 * [RACF Database Parser](https://github.com/bigendiansmalls/racfdbparse)
+* [OMVSenum.sh](https://gist.github.com/mainframed/c52a4dc93d2ab16d39a4da9b3f38bbe0)
+* [lu_brute.py](https://gist.github.com/mainframed/381724f4537b1e893d66a206e4ab1d9b)
 * Mainframe Application pentesting (CICS etc.)
 	* [CICSPwn](https://github.com/ayoul3/cicspwn) - If your account has access to the CICS trans. "CECI" you can upload JCL and get a shell
 	* [BIRP](https://github.com/sensepost/birp)

@@ -65,7 +65,7 @@ Table of Contents
 * **Master Console**
   * [A "system" level console](https://youtu.be/kjEEFSr-ncE?t=1356)
   * If you get access then its game over
-* **Subsystems**
+* **Auth Subsystems**
   * TOP-SECRET
   * ACF-2
   * RACF

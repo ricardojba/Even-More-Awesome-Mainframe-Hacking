@@ -149,7 +149,7 @@ Table of Contents
   * Provides access to both worlds (TSO & OMVS)
   * Respects wildcards (*.RACF*.*)
   * Awesome brute forcing point
-C
+* **Other**
   * DB2 (5023) & MQ (1415)
   * HP/BMC/Tivoli monitoring
   * WebSphere

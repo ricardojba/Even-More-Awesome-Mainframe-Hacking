@@ -315,33 +315,67 @@ So you got some valid creds, but remember when trying to login, that some users 
 
 
 ## [↑](#table-of-contents) Presentations and Talks
-* [Video - All the videos of Security Talks by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmEL56fb5AnZCM8pXXFfJS0n)
-* [Video - All the videos of Tools by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmF_CB9VYbcAhiyg1i1IYaWP)
-* [Video - All the videos of Mainframe Hacking by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmGdX1OE_xjK0GKGjSLwxVn_)
-* [How to Break into z/OS Systems - Staurt Henderson](http://www.stuhenderson.com/XBRKZTXT.PDF)
-* [How to Break Into z/OS Systems Through USS, TCP/IP, and the Internet](http://www.stuhenderson.com/STUuss01.pdf)
-* [Video - Mainframe [z/OS] Reverse Engineering & Exploit Development by @bigendiansmalls](https://www.bigendiansmalls.com/files/us-18-Rikansrud-Mainframe-[zOS]-Reverse-Engineering-and-Exploit-Development_Publish.mp4)
-* [Video - Security Necromancy : Further Adventures in Mainframe Hacking by Soldier of FORTRAN (@mainframed767) & @bigendiansmalls](https://www.youtube.com/watch?v=LgmqiugpVyU)
-* [Top 10 Security Vulnerabilities in z/OS by John Hillman (Vanguard)](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
-* [The current state of Mainframe Hacking by Phil Young - Soldier of FORTRAN (@mainframed767)](https://www.slideshare.net/PhilipYoung14/philip-young-current-state-of-mainframe-hacking-vanguard-101016)
-* [Advanced Mainframe Hacking by Phil Young - Soldier of FORTRAN (@mainframed767)](https://www.slideshare.net/PhilipYoung14/advanced-mainframe-hacking)
-* [Defcon 22 From ROOT to SPECIAL - Soldier of FORTRAN (@mainframed767)](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20presentations/DEF%20CON%2022%20-%20Philip-Young-From-root-to-SPECIAL-Hacking-IBM-Mainframes.pdf)
-* [Mainframes: What the F$#K is That About? - Soldier of FORTRAN (@mainframed767)](https://www.dropbox.com/s/zl7suai6g1558yl/April%202013%20-%20ThotCon%202013%20-%20Mainframes-%20What%20the%20fuck%20is%20that%20about-.pdf)
-* [BSidesAustin Mainframes: Everybody has one but nobody knows how to hack them - Soldier of FORTRAN (@mainframed767)](https://www.dropbox.com/s/8vdrhepojde9wah/March%202013%20-%20BSidesAustin%20-%20Mainframes-%20Everyones%20got%20one%2C%20no%20one%20knows%20how%20to%20hack%20them.pdf)
-* [BSidesLV 2013 - Legacy 0-Day How hackers breached the Logica Mainframe - Soldier of FORTRAN (@mainframed767)](https://www.dropbox.com/s/w8c9e4yfsmx56tw/BSidesLV%202013%20-%20Logica%20Breach%20.pdf)
-* [Gaps in your Defense: Hacking the Mainframe by Soldier of FORTRAN (@mainframed767)](https://www.slideshare.net/PhilipYoung14/ca-world-mft1755-gaps-in-your-defense-hacking-the-mainframe-philip-young)
-* [Video - Gaps in your Defense: Hacking the Mainframe by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/watch?v=1G5Q2sduexs)
-* [Hacking Mainframes; Vulnerabilities in applications exposed over TN3270 by Dominic White (Sensepost)](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+
+* [Playlist - All the videos of Security Talks by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmEL56fb5AnZCM8pXXFfJS0n)
+* [Playlist - All the videos of Tools by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmF_CB9VYbcAhiyg1i1IYaWP)
+* [Playlist - All the videos of Mainframe Hacking by Soldier of FORTRAN (@mainframed767)](https://www.youtube.com/playlist?list=PLBVy6TfEpKmGdX1OE_xjK0GKGjSLwxVn_)
+
+
+**2011**
+* [Prezo - How to Break Into z/OS Systems Through USS, TCP/IP, and the Internet](http://www.stuhenderson.com/STUuss01.pdf)
+* [Video - DEFCON 14: IBM Networking Attacks-Or The Easiest Way To Own A Mainframe by Martyn Ruks](https://youtu.be/r9hOiXtrumM)
+
+
+**2012**
+
+
+
+**2013**
+* [Prezo - How to Break into z/OS Systems - Staurt Henderson](http://www.stuhenderson.com/XBRKZTXT.PDF)
+* [Prezo - BSidesLV 2013 - Legacy 0-Day How hackers breached the Logica Mainframe - Soldier of FORTRAN (@mainframed767)](https://www.dropbox.com/s/w8c9e4yfsmx56tw/BSidesLV%202013%20-%20Logica%20Breach%20.pdf)
+* [Prezo - Mainframes: What the F$#K is That About? - Soldier of FORTRAN (@mainframed767)](https://www.dropbox.com/s/zl7suai6g1558yl/April%202013%20-%20ThotCon%202013%20-%20Mainframes-%20What%20the%20fuck%20is%20that%20about-.pdf)
+* [Prezo - BSidesAustin Mainframes: Everybody has one but nobody knows how to hack them - Soldier of FORTRAN (@mainframed767)](https://www.dropbox.com/s/8vdrhepojde9wah/March%202013%20-%20BSidesAustin%20-%20Mainframes-%20Everyones%20got%20one%2C%20no%20one%20knows%20how%20to%20hack%20them.pdf)
+
+
+**2014**
+* [Video - Hacking Mainframes; Vulnerabilities in applications exposed over TN3270 by Dominic White (Sensepost)](https://youtu.be/3HFiv7NvWrM)
 * [Video - Hacking Mainframes; Vulnerabilities in applications exposed over TN3270 by Dominic White (Sensepost)](http://www.irongeek.com/i.php?page=videos/derbycon4/t217-hacking-mainframes-vulnerabilities-in-applications-exposed-over-tn3270-dominic-white)
-* [Video - Ransomware on the Mainframe: Checkmate by @bigendiansmalls](https://www.youtube.com/watch?v=i-DbTy3bEj8)
+* [Prezo - Hacking Mainframes; Vulnerabilities in applications exposed over TN3270 by Dominic White (Sensepost)](https://www.slideshare.net/sensepost/vulnerabilities-in-tn3270-based-application)
+
+
+**2015**
+* [Prezo - Top 10 Security Vulnerabilities in z/OS by John Hillman (Vanguard)](https://chapters.theiia.org/fort-worth/ChapterDocuments/zOS%20Security%20Audit%20Top%20Ten%20-%20ISACA.pdf)
+* [Video - Defcon 22 From ROOT to SPECIAL - Soldier of FORTRAN (@mainframed767)](https://youtu.be/Xfl4spvM5DI)
+* [Prezo - Defcon 22 From ROOT to SPECIAL - Soldier of FORTRAN (@mainframed767)](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20presentations/DEF%20CON%2022%20-%20Philip-Young-From-root-to-SPECIAL-Hacking-IBM-Mainframes.pdf)
 * [Video - Learning Mainframe Hacking: Where the hell did all my free time go? by @bigendiansmalls](http://www.irongeek.com/i.php?page=videos/derbycon5/stable31-learning-mainframe-hacking-where-the-hell-did-all-my-free-time-go-chad-rikansrud)
-* [Post exploit goodness on a Mainframe SPECIAL is the new root by (@ayoul3__)](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
-* [Video - Hacking Customer Information Control System (CICS) by Ayoub Elaassal (@ayoul3__)](https://www.youtube.com/watch?v=KnY0Gg_WSLU)
-* [Video - IBM Networking Attacks-Or The Easiest Way To Own A Mainframe by Martyn Ruks](https://www.youtube.com/watch?v=r9hOiXtrumM)
-* [Video - Cracking Mainframe Passwords by Nigel Pentland](https://www.youtube.com/watch?v=scVojIRxv-M)
-* [Video - Exploiting the Mainframe - Z/OS integrity 101 by Mark Wilson & Ray Overby](https://www.youtube.com/watch?v=7UVrF8skbHU)
-* [Video - A Gentle Introduction to Hacking Mainframes by Dan Helton](https://www.youtube.com/watch?v=ZfUBv2Ac29Q)
-* [PDF- Talk - Gibson 101 - Quick Introduction to Hacking Mainframes in 2020](https://null.co.in/event_sessions/2993-gibson-101-quick-introduction-to-hacking-mainframes-in-2020)
+* [Video - DEF CON 23 - Young and Rikansrud - Security Necromancy : Further Adventures in Mainframe Hacking (@mainframed767) & @bigendiansmalls](https://youtu.be/LgmqiugpVyU)
+
+
+**2016**
+* [Video - Gaps in your Defense: Hacking the Mainframe by Soldier of FORTRAN (@mainframed767)](https://youtu.be/1G5Q2sduexs)
+* [Prezo - Gaps in your Defense: Hacking the Mainframe by Soldier of FORTRAN (@mainframed767)](https://www.slideshare.net/PhilipYoung14/ca-world-mft1755-gaps-in-your-defense-hacking-the-mainframe-philip-young)
+* [Prezo - The current state of Mainframe Hacking by Phil Young - Soldier of FORTRAN (@mainframed767)](https://www.slideshare.net/PhilipYoung14/philip-young-current-state-of-mainframe-hacking-vanguard-101016)
+* [Prezo - Advanced Mainframe Hacking by Phil Young - Soldier of FORTRAN (@mainframed767)](https://www.slideshare.net/PhilipYoung14/advanced-mainframe-hacking)
+
+**2017**
+* [Video - #HITB2017AMS​ D1T1 - Hacking Customer Information Control System (CICS) by Ayoub Elaassal (@ayoul3__)](https://youtu.be/KnY0Gg_WSLU)
+* [Video - Ransomware on the Mainframe: Checkmate by @bigendiansmalls](https://youtu.be/i-DbTy3bEj8)
+
+
+**2018**
+* [Prezo - Post exploit goodness on a Mainframe SPECIAL is the new root by (@ayoul3__)](https://cansecwest.com/slides/2018/Post%20exploit%20goodness%20on%20a%20Mainframe%20SPECIAL%20is%20the%20new%20root%20-%20Ayoub%20Elaassal,%20PwC%20France.pdf)
+* [Video - Exploiting the Mainframe - Z/OS integrity 101 by Mark Wilson & Ray Overby](https://youtu.be/7UVrF8skbHU)
+* [Video - BSides Glasgow 2018 - Nigel Pentland - Cracking Mainframe Passwords](https://youtu.be/scVojIRxv-M)
+* [Video - Mainframe [z/OS] Reverse Engineering & Exploit Development by @bigendiansmalls](https://www.bigendiansmalls.com/files/us-18-Rikansrud-Mainframe-[zOS]-Reverse-Engineering-and-Exploit-Development_Publish.mp4)
+
+
+**2019**
+* [Video - NorthSec 2019 – Philip Young – Mainframe Hacking in 2019](https://youtu.be/KXlmru_B-Uk)
+* [Video - CackalackyCon1 - Dan Helton - A Gentle Introduction to Hacking Mainframes by Dan Helton](https://youtu.be/ZfUBv2Ac29Q)
+
+
+**2020**
+* [Prezo - Gibson 101 - Quick Introduction to Hacking Mainframes in 2020](https://null.co.in/event_sessions/2993-gibson-101-quick-introduction-to-hacking-mainframes-in-2020)
 
    
 ## [↑](#table-of-contents) ACF2 Specific references

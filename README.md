@@ -272,16 +272,16 @@ In the ISPF-like programs:
 ## [↑](#table-of-contents) Pentesting
 
 
-This is a small pentest guide based on several Talks and Presentations available on the Internet, namely tasks and tools to run for each steps listed bellow and some advice.
+This is a small pentest guide based on my limited experience testing Mainframes and also several Talks and Presentations available on the Internet, namely tasks and tools to run for each steps listed bellow and some advice.
 
-Mainframes are just computers... costing ungodly prices with also ungodly high specs and availability capacity. That said unless theres something very wrong, it will hold high loads.
+Mainframes are just computers... costing ungodly prices with also ungodly high specs and availability capacity. That said, unless theres something very wrong, it will hold high loads.
 
-As with every typical security assessment there is always lots of reservations by the teams or person managing the systems. This is especially true since these are very expensive systems handling probably the most mission critical operations in the company. Remember to tell them that you are there to help them secure their systems and not to make their lives harder. Respect them and win them over, because they probably are the same age as your father or mother (or even older) ;)
+As with every typical security assessment, there is always lots of reservations by the teams or person managing the systems. This is especially true withe tese type of systems, since these are very expensive, handling probably the most mission critical operations in the company. Remember to tell them that you are there to help them secure their systems and not to make their lives harder. Respect them and win them over, because they probably are the same age as your father or mother (or even older) ;)
 
-Before starting, ask the Team or Person that manages the Mainframe if there is a TEST or QA LPAR(s) or Sysplex(s) that mirror PROD. Its preferable to test those. 
+Before starting, ask the Team or Person that manages the Mainframe, if there is a TEST or QA LPAR(s) or Sysplex(s) that mirror PROD. Its preferable to test those. 
 
 
-**Initial Recon**
+**Initial Recon and Gaining Access**
 
 First off... without valid credentials not much can be done, so it is important to find valid creds and enumeration is very important in obtaining them.
 
@@ -289,17 +289,26 @@ Start with a full TCP port Portscan and enable Service discovery e.g.:
 
 `nmap -sTV --allports --version-all --version-intensity 9 -p- -v --open -Pn -n mainframe.com -oA mainframe.com`
 
-The mainframe can be running webservers (e.g. web based 3270 clients), so do try all the usual web attacks and reverse engineer (java applets) shenanigans.
+The mainframe can be running webservers (e.g. web based 3270 clients), so try all the usual web attacks and reverse engineer (java applets) shenanigans.
+
+Enumerate VTAM (unauth)
 
 
-**Gaining Access**
+
+Enumerate TSO Users
+
+
+Brute Force TSO Users Creds
+
+
+
 
 Get creds:
-* Test for [Default accounts](https://github.com/hacksomeheavymetal/zOS/blob/master/default_accounts.txt)
-* Reuse them - If you have creds from, for example, Windows try them - they could be synced with with Active Directory
-* Steal them - Phishing, Social Engineer, Check Config Files, Keepass Confluence, Sharepoint, SMB Shares, Wikis, etc - search for terms associated with Mainframes (TSO, LPAR, CICS, etc)
-* Sniff them - MITM TN3270 on port TCP/23 is plain text... yes in 2021.
-* Brute-Force them - Be careful doing this because you can lock accounts, depending on the password policy.
+* Test [Default accounts](https://github.com/hacksomeheavymetal/zOS/blob/master/default_accounts.txt)
+* Reuse - If you have creds from, for example, Windows try them - they could be synced with with Active Directory
+* Steal - Phishing, Social Engineer, Check Config Files, Keepass, Confluence, Sharepoint, SMB Shares, Wikis, etc - search for terms associated with Mainframes (TSO, LPAR, CICS, etc)
+* Sniff - MITM TN3270 on port TCP/23 is plain text... yes in 2021.
+* Brute-Force - Be careful doing this because you can lock accounts, depending on the implemented password policy.
 
 So you got some valid creds, but remember when trying to login, that some users might only have access to TSO or Unix, but not both.
 
@@ -357,7 +366,7 @@ So you got some valid creds, but remember when trying to login, that some users 
 * [Prezo - Advanced Mainframe Hacking by Phil Young - Soldier of FORTRAN (@mainframed767)](https://www.slideshare.net/PhilipYoung14/advanced-mainframe-hacking)
 
 **2017**
-* [Video - #HITB2017AMS​ D1T1 - Hacking Customer Information Control System (CICS) by Ayoub Elaassal (@ayoul3__)](https://youtu.be/KnY0Gg_WSLU)
+* [Video - #HITB2017AMS D1T1 - Hacking Customer Information Control System (CICS) by Ayoub Elaassal (@ayoul3__)](https://youtu.be/KnY0Gg_WSLU)
 * [Video - Ransomware on the Mainframe: Checkmate by @bigendiansmalls](https://youtu.be/i-DbTy3bEj8)
 
 

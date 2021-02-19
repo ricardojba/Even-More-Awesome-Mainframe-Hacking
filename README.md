@@ -289,11 +289,17 @@ Start with a full TCP port Portscan and enable Service discovery e.g.:
 
 `nmap -sTV --allports --version-all --version-intensity 9 -p- -v --open -Pn -n mainframe.com -oA mainframe.com`
 
+
+
 The mainframe can be running webservers (e.g. web based 3270 clients), so try all the usual web attacks and reverse engineer (java applets) shenanigans.
+
+
 
 Next take a screenshot of all TN3270 enabled ports. That way you can get an ideia of what the Mainframe is exposing without having to manually use a TN3270 enabled terminal like [X3270](http://x3270.bgp.nu). You can for example rapidly spot where TSO is running.
 
 `nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p- --script tn3270-screen mainframe.com`
+
+
 
 Now try to enumerate VTAM to check if TSO is enabled. Again this is a completely unauthenticated scan. **Do a scan per port and use diferent output folders, so you don't overwrite the output files.** 
 Also notice the Nmap script argument `vtam-enum.command` and `vtam-enum.macros`. Sometimes you won't be dropped right in a TSO login screen after connecting to a TN3270 port. You will need to issue a command first to access VTAM. In the examples bellow I've included some typical examples, but YMMV depending on what you are testing (you might not even be in VTAM or they running CICS) - If you can't figure out the command, you can try to ask someone from the mainframe team (I warned you to win them over ;) ).
@@ -315,6 +321,7 @@ When you finish, check the output files.
 [Reference](https://youtu.be/EnHd8jJDWEI)
 
 
+
 Next step let's enumerate some TSO Users.
 
 This is a very common issue in TSO because it explicity indicates on error messages, if the user exists or not. IBM has issued a fix for this (turn *PASSWORDPREPROMPT ON*)
@@ -330,14 +337,19 @@ If you can see the error messages being shown and/or found a valid user, well th
 [Reference](https://youtu.be/_dWBVQoMDaw)
 
 
+
 CICS Transaction Enumeration
+
 Use the [Default CICS Transactions](https://github.com/hacksomeheavymetal/zOS/blob/master/default_cics_transactions.txt) for the Nmap script argument `idlist` scan parameter.
 
 
+
 Brute Force TSO Users Creds
+
 Use the [Default Accounts](https://github.com/hacksomeheavymetal/zOS/blob/master/default_accounts.txt) for the Nmap script argument `userdb` and `passdb` scan parameter.
 
 [Reference](https://youtu.be/mod5PR0iBfU)
+
 
 
 Get creds:

@@ -317,7 +317,7 @@ When you finish, check the output files.
 
 Next step let's enumerate some TSO Users.
 
-This is a very common issue in TSO because since it explicity indicates on error messages if the user exists. IBM has issued a fix for this (turn *PASSWORDPREPROMPT ON*)
+This is a very common issue in TSO because it explicity indicates on error messages, if the user exists or not. IBM has issued a fix for this (turn *PASSWORDPREPROMPT ON*)
 
 `nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p- --script tso-enum --script-args brute.threads=5,userdb=default_tso_accounts.txt,tso-enum.commands="logon applid(tso)" mainframe.com`
 

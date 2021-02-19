@@ -291,16 +291,53 @@ Start with a full TCP port Portscan and enable Service discovery e.g.:
 
 The mainframe can be running webservers (e.g. web based 3270 clients), so try all the usual web attacks and reverse engineer (java applets) shenanigans.
 
-Enumerate VTAM (unauth)
+Next take a screenshot of all TN3270 enabled ports. That way you can get an ideia of what the Mainframe is exposing without having to manually use a TN3270 enabled terminal like [X3270](http://x3270.bgp.nu). You can for example rapidly spot where TSO is running.
+
+`nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p- --script tn3270-screen mainframe.com`
+
+Now try to enumerate VTAM to check if TSO is enabled. Again this is a completely unauthenticated scan. **Do a scan per port and use diferent output folders, so you don't overwrite the output files.** 
+Also notice the Nmap script argument `vtam-enum.command` and `vtam-enum.macros`. Sometimes you won't be dropped right in a TSO login screen after connecting to a TN3270 port. You will need to issue a command first to access VTAM. In the examples bellow I've included some typical examples, but YMMV depending on what you are testing (you might not even be in VTAM or they running CICS) - If you can't figure out the command, you can try to ask someone from the mainframe team (I warned you to win them over ;) ).
+
+You can run this with or without a `idlist=yourlist.txt`
+
+`nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p 23 --script vtam-enum --script-args brute.threads=5,idlist=yourlist.txt,vtam-enum.path="\VTAM-OUT-23\"  mainframe.com`
+
+`nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p 23 --script vtam-enum --script-args brute.threads=5,idlist=yourlist.txt,vtam-enum.command="tso",vtam-enum.macros=true,vtam-enum.path="\VTAM-OUT-23\"  mainframe.com`
+
+`nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p 23 --script vtam-enum --script-args brute.threads=5,idlist=yourlist.txt,vtam-enum.command="logon tso",vtam-enum.macros=true,vtam-enum.path="\VTAM-OUT-23\"  mainframe.com`
+
+`nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p 23 --script vtam-enum --script-args brute.threads=5,idlist=yourlist.txt,vtam-enum.command="exit;logon applid(cicsfake)",vtam-enum.macros=true,vtam-enum.path="\VTAM-OUT-23\"  mainframe.com`
+
+`nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p 23 --script vtam-enum --script-args brute.threads=5,idlist=yourlist.txt,vtam-enum.command="ibmtest;logon applid(cicsfake)",vtam-enum.macros=true,vtam-enum.path="\VTAM-OUT-23\"  mainframe.com`
+
+When you finish, check the output files.
+
+[Reference](https://youtu.be/EnHd8jJDWEI)
 
 
+Next step let's enumerate some TSO Users.
 
-Enumerate TSO Users
+This is a very common issue in TSO because since it explicity indicates on error messages if the user exists. IBM has issued a fix for this (turn *PASSWORDPREPROMPT ON*)
+
+`nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p- --script tso-enum --script-args brute.threads=5,userdb=default_tso_accounts.txt,tso-enum.commands="logon applid(tso)" mainframe.com`
+
+`nmap -sV --version-all --version-intensity 9 -v --open -Pn -n -p 23,992,1023,7023 --script tso-enum --script-args brute.threads=5,userdb=default_tso_accounts.txt mainframe.com`
+
+Remember that TN3270 web clients can also be used for this, especially if they mimic the same default behavior of TSO. That said you can use Burp Suite to also perform this.
+
+If you can see the error messages being shown and/or found a valid user, well then you have probably your first reportable finding "Username Enumeration" :)
+
+[Reference](https://youtu.be/_dWBVQoMDaw)
+
+
+CICS Transaction Enumeration
+Use the [Default CICS Transactions](https://github.com/hacksomeheavymetal/zOS/blob/master/default_cics_transactions.txt) for the Nmap script argument `idlist` scan parameter.
 
 
 Brute Force TSO Users Creds
+Use the [Default Accounts](https://github.com/hacksomeheavymetal/zOS/blob/master/default_accounts.txt) for the Nmap script argument `userdb` and `passdb` scan parameter.
 
-
+[Reference](https://youtu.be/mod5PR0iBfU)
 
 
 Get creds:

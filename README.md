@@ -276,7 +276,7 @@ This is a small pentest guide based on my limited experience testing Mainframes 
 
 Mainframes are just computers... costing ungodly prices with also ungodly high specs and availability capacity. That said, unless theres something very wrong, it will hold high loads.
 
-As with every typical security assessment, there is always lots of reservations by the teams or person managing the systems. This is especially true withe tese type of systems, since these are very expensive, handling probably the most mission critical operations in the company. Remember to tell them that you are there to help them secure their systems and not to make their lives harder. Respect them and win them over, because they probably are the same age as your father or mother (or even older) ;)
+As with every typical security assessment, there is always lots of reservations by the teams or person managing the systems. This is especially true with these systems, since they are very expensive, handling probably the most mission critical operations in the company. Remember to tell them that you are there to help them secure their systems and not to make their lives harder. Respect them and win them over, because they probably are the same age as your father or mother (or even older) ;)
 
 Before starting, ask the Team or Person that manages the Mainframe, if there is a TEST or QA LPAR(s) or Sysplex(s) that mirror PROD. Its preferable to test those. 
 

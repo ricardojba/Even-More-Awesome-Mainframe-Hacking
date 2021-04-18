@@ -129,7 +129,7 @@ Table of Contents
   * TSO command that gives you a /bin/sh shell 
   * Its a Unix subsystem for network, FTP, webservices support
   * You can "su" to root (and run other Unix commands) without a password, if the account is in 'BPX.SUPERUSER'
-* **ISPF** 
+* **ISPF** - Interactive System Productivity Facility
   * TSO command that gives you the Menu screens (GUI)
   * What everyone uses to interact with TSO
   * Includes file browser & editor

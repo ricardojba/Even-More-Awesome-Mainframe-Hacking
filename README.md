@@ -82,9 +82,8 @@ Table of Contents
   * The equivalent of shell scripts (sort of)
   * You can submit JOBs in JCL over FTP
   * Has a "JOB card" or header and a "PMG" or program to exec
-* **Everything on a Mainframe is a JOB managed by JES (Job Entry Sub-system)**
+* **Everything on a Mainframe is a JOB managed by JES2 (Job Entry Sub-system)**
 * **CLIST** - The equivalent of scripting language like Python
-* **JES2** - Controls all jobs and many more
 * **TSO** - z/OS cli (Linux bash equivalent)
   * Login has a user enumeration flaw via on-screen error messages
   * "Traditional" process accounting

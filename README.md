@@ -84,6 +84,7 @@ Table of Contents
   * Has a "JOB card" or header and a "PMG" or program to exec
 * **Everything on a Mainframe is a JOB managed by JES (Job Entry Sub-system)**
 * **CLIST** - The equivalent of scripting language like Python
+* **JES2** - Controls all jobs and many more
 * **TSO** - z/OS cli (Linux bash equivalent)
   * Login has a user enumeration flaw via on-screen error messages
   * "Traditional" process accounting
@@ -433,6 +434,7 @@ So you got some valid creds, but remember when trying to login, that some users 
 
 **2020**
 * [Prezo - Gibson 101 - Quick Introduction to Hacking Mainframes in 2020](https://null.co.in/event_sessions/2993-gibson-101-quick-introduction-to-hacking-mainframes-in-2020)
+* [Video - Wild West Hackin' Fest 2020 (Virtual): Not Just Evil: Hacking Mainframes with Network Job Entry - Philip Young - Soldier of FORTRAN (@mainframed767)](https://youtu.be/gKjH7LK_rBo)
 
    
 ## [↑](#table-of-contents) ACF2 Specific references

@@ -66,6 +66,17 @@ Table of Contents
 * **Master Console**
   * [A "system" level console](https://youtu.be/kjEEFSr-ncE?t=1356)
   * If you get access then its game over
+* **Everything on a Mainframe is a JOB managed by JES2 (Job Entry Sub-system)**
+  * Jobs are submitted to JES
+  * JES will queue the job and work on jobs in the order and priority they are assigned
+  * JES then takes the output and places it where it belongs
+* **Network JOB Entry (NJE)** - Can be used to send a JOB or multiple JOBs to a remote Mainframe for processing
+  * Runs over TCP/IP
+  * "Speaks" NJE Protocol
+  * Port 175/TCP or 2252/TCP (TLS)
+  * NODE - Name of a remote Mainframe system running NJE
+  * RHOST - Remote calling system name
+  * OHOST - Current system name
 * **External Security Managers (ESMs) - ACL, RBAC, etc**
   * TOP-SECRET
   * ACF-2
@@ -75,6 +86,7 @@ Table of Contents
       * **Special** : can alter RACF rules and access any resource
       * **Operations** : access all files unless being forbidden from doing so
       * **Auditor** : access audit trails and manage logging classes
+* **CLIST** - The equivalent of scripting language like Python
 * **REXX files**
   * The equivalent of scripting language like Python/Ruby
   * REXX Sockets have ASCII translation built in
@@ -82,8 +94,6 @@ Table of Contents
   * The equivalent of shell scripts (sort of)
   * You can submit JOBs in JCL over FTP
   * Has a "JOB card" or header and a "PMG" or program to exec
-* **Everything on a Mainframe is a JOB managed by JES2 (Job Entry Sub-system)**
-* **CLIST** - The equivalent of scripting language like Python
 * **TSO** - z/OS cli (Linux bash equivalent)
   * Login has a user enumeration flaw via on-screen error messages
   * "Traditional" process accounting
@@ -240,6 +250,9 @@ In the ISPF-like programs:
 	* [cics-user-enum.nse](https://nmap.org/nsedoc/scripts/cics-user-enum.html) - needs valid applid
 	* [nje-node-brute.nse](https://nmap.org/nsedoc/scripts/nje-node-brute.html)
 	* [nje-pass-brute.nse](https://nmap.org/nsedoc/scripts/nje-pass-brute.html)
+* [Network Job Entry (NJE) python library and example scripts](https://github.com/zedsec390/NJElib)
+* [iNJEctor.py: A script to send messages and commands to a target node using NJE](https://github.com/zedsec390/NJElib/blob/master/iNJEctor.py)
+* [jcl.py: Example python script to send JCL to a target system via NJE as another user](https://github.com/zedsec390/NJElib/blob/master/jcl.py)
 * [TSO-Brute](https://github.com/mainframed/TSO-Brute)
 * [TPX Brute - The z/OS TPX logon panel brute forcer](https://github.com/quentinhardy/TPX-Brute)
 * [RACF Database Parser](https://github.com/bigendiansmalls/racfdbparse)

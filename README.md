@@ -448,7 +448,11 @@ So you got some valid creds, but remember when trying to login, that some users 
 * [Prezo - Gibson 101 - Quick Introduction to Hacking Mainframes in 2020](https://null.co.in/event_sessions/2993-gibson-101-quick-introduction-to-hacking-mainframes-in-2020)
 * [Video - Wild West Hackin' Fest 2020 (Virtual): Not Just Evil: Hacking Mainframes with Network Job Entry - Philip Young - Soldier of FORTRAN (@mainframed767)](https://youtu.be/gKjH7LK_rBo)
 
-   
+
+**2021**
+* [Video - HOW TO HACK "THE MAINFRAME" ! (for real) - TRUESEC - Davide Girardi - STÖK](https://youtu.be/vyHAqxCkf-k)
+
+
 ## [↑](#table-of-contents) ACF2 Specific references
 * [CA ACF2 for z/OS - 16.0 Documentation](https://docops.ca.com/ca-acf2-for-z-os/16-0/en)
 * [GIAC - ACF2 Mainframe Security](https://www.giac.org/paper/gsec/2812/acf2-mainframe-security/104768)

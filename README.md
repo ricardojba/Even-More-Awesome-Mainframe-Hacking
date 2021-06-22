@@ -451,7 +451,7 @@ So you got some valid creds, but remember when trying to login, that some users 
 
 **2021**
 * [Video - HOW TO HACK "THE MAINFRAME" ! (for real) - TRUESEC - Davide Girardi - STÖK](https://youtu.be/vyHAqxCkf-k)
-
+* [Prezo - Crossover Episode: The Real-Life Story of the First Mainframe Container Breakout - Ian Coldwater and Chad Rikansrud (Bigendian Smalls)](https://defcon.org/html/defcon-29/dc-29-speakers.html#coldwater)
 
 ## [↑](#table-of-contents) ACF2 Specific references
 * [CA ACF2 for z/OS - 16.0 Documentation](https://docops.ca.com/ca-acf2-for-z-os/16-0/en)

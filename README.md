@@ -453,6 +453,11 @@ So you got some valid creds, but remember when trying to login, that some users 
 * [Video - HOW TO HACK "THE MAINFRAME" ! (for real) - TRUESEC - Davide Girardi - STÖK](https://youtu.be/vyHAqxCkf-k)
 * [Prezo - Crossover Episode: The Real-Life Story of the First Mainframe Container Breakout - Ian Coldwater and Chad Rikansrud (Bigendian Smalls)](https://defcon.org/html/defcon-29/dc-29-speakers.html#coldwater)
 
+
+**2022**
+* [Training - DEFCON 30 2022 - Mainframe buffer overlow workshop container (@mainframed767)](https://github.com/mainframed/DC30_Workshop)
+
+
 ## [↑](#table-of-contents) ACF2 Specific references
 * [CA ACF2 for z/OS - 16.0 Documentation](https://docops.ca.com/ca-acf2-for-z-os/16-0/en)
 * [GIAC - ACF2 Mainframe Security](https://www.giac.org/paper/gsec/2812/acf2-mainframe-security/104768)

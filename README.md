@@ -480,7 +480,7 @@ So you got some valid creds, but remember when trying to login, that some users 
 
 
 
-# [↑](#table-of-contents) IBM iSeries
+# [↑](#table-of-contents) AS400 / IBM i Series server / IBM System i
 
 ## [↑](#table-of-contents) iSeries Books
 * Amazon - [Hacking iSeries by Shalom Carmel](https://www.amazon.com/Hacking-iSeries-Shalom-Carmel/dp/1419625012)
@@ -514,4 +514,4 @@ So you got some valid creds, but remember when trying to login, that some users 
 ## [↑](#table-of-contents) Miscellaneous
 * [AS400i.com](http://as400i.com/)
 * [Hack The Legacy Website](http://hackthelegacy.org/)
-
+* [Booby Trapping IBM i](https://blog.silentsignal.eu/2023/03/30/booby-trapping-ibm-i/)

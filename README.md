@@ -477,6 +477,7 @@ So you got some valid creds, but remember when trying to login, that some users 
 * [z/OS Internet Library by IBM - Collection of manuals,guides & books about z/OS ](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosInternetLibrary)
 * [z/OS - all things security](https://github.com/hacksomeheavymetal/zOS)
 * [IBM z/OS Management Facility web application arbitrary file read](https://www.whiteoaksecurity.com/2019-12-30-0-day-in-a-multi-million-dollar-machine/)
+* [Mapping Mainframe Memory Made Easy](https://www.netspi.com/blog/technical-blog/mainframe-penetration-testing/mapping-mainframe-memory/)
 
 
 

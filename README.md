@@ -478,6 +478,7 @@ So you got some valid creds, but remember when trying to login, that some users 
 * [z/OS - all things security](https://github.com/hacksomeheavymetal/zOS)
 * [IBM z/OS Management Facility web application arbitrary file read](https://www.whiteoaksecurity.com/2019-12-30-0-day-in-a-multi-million-dollar-machine/)
 * [Mapping Mainframe Memory Made Easy](https://www.netspi.com/blog/technical-blog/mainframe-penetration-testing/mapping-mainframe-memory/)
+* [Hacking CICS: 7 Ways to Defeat Mainframe Applications](https://www.netspi.com/blog/technical-blog/mainframe-penetration-testing/hacking-cics-applications/)
 
 
 
